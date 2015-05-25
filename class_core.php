@@ -23,7 +23,7 @@ class Profanity
 		'crap', 'fucker', 'bollock', 'bollocks',
 		);
 
-	private $_blacklist_metahpone = array(
+	private $_blacklist_metaphone = array(
 		'shit', 'motherfucker', 'fuk', 'wank',
 		'fukin', 'fuckin', 'fucking', 'bastard',
 		'ass', 'asshole', 'arsehole', 'faggot',
@@ -57,7 +57,7 @@ class Profanity
 
 		foreach ($words as $word)
 		{
-			foreach ($this->_blacklist_metahpone as $word_met)
+			foreach ($this->_blacklist_metaphone as $word_met)
 			{
 				if (metaphone($word) === metaphone($word_met))
 				{
